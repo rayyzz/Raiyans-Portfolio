@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Raiyan Islam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm Raiyan Islam</h1>
+            <p class="lead">Aspiring Software Developer | Data Analyst | Tech and Business enthusiast</p>
+        </div>
+    </section>
+
+	<section id="about" class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-4">About Me</h2>
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<p>Aspiring Software Developer/Data Analyst with extensive experience in software development and data analytics through prior internships and university courses/projects. I am a candidate for BEng in Computer Engineering at Toronto Metropolitan University (formerly Ryerson University). I am passionate about using my skills to add value and solve problems for people. I enjoy traveling, playing basketball, and trying new food! Feel free to connect with me through LinkedIn, and check out my GitHub, let's chat!</p>
+					<div class="social-links mt-3">
+						<a href="https://www.linkedin.com/in/raiyanislam27/" target="_blank" class="btn btn-primary me-2">
+							<i class="fab fa-linkedin"></i> LinkedIn
+						</a>
+						<a href="https://github.com/rayyzz" target="_blank" class="btn btn-dark">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-unstyled">
+						<li><strong>Age:</strong> 22</li>
+						<li><strong>Email:</strong> raiyan.islam527@gmail.com</li>
+						<li><strong>Phone:</strong> 647-410-6649</li>
+						<li><strong>Address:</strong> Scarborough, Ontario</li>
+						<li><strong>Languages:</strong> English, Bengali</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Work Experience</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Royal Bank of Canada</h5>
+                    <h6 class="text-muted">Software Developer Intern</h6>
+                    <ul>
+                        <li>Developed a website to streamline the automation processes of retrieving firewall rules.</li>
+                        <li>Built the website's homepage, acting as a dashboard displaying key metrics from Apache Airflow's Dags and Postgres.</li>
+						<li>Homepage contains information such as Automation Costs Saved, Total Modules, Total Users Registered, Monthly DAG runs, and Successful DAGS in Production</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5>Royal Bank of Canada</h5>
+                    <h6 class="text-muted">Automation Analyst Intern</h6>
+                    <ul>
+                        <li>Developed Tableau Dashboards displaying KRI and KPI metrics.</li>
+						<li>Analyzed and visualized 200+ firewall rules and policies data using Tableau to provide actionable insights for the
+							Network Security Team</li>
+                        <li>Utilized the Software Development Life Cycle methodologies, such as Agile, and actively participated in daily
+							Scrum meetings where I effectively communicated with team members verbally.
+							</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5>Bachelor of Engineering, Computer Engineering</h5>
+                    <h6 class="text-muted">Toronto Metropolitan University (formerly Ryerson University)</h6>
+                    <p>Relevant Courses: Data Structures and Algorithms, Database Systems I, Object Oriented Programming,
+						Computer Networks, Network Security, Software Testing and QA, Cloud Computing, Computer Architecture.</p>
+                    <p><strong>Projects:</strong>
+                        <ul>
+                            <li>IoT Smart Home Mobile App (React Native, Node.js, MongoDB)</li>
+                            <li>Fitness Tracker App (PHP, SQL, Bootstrap)</li>
+                            <li>Online Food Delivery Web Application (Java, SQL)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Programming Languages</h5>
+                    <p>Python, Java, C/C++, PHP, JavaScript</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Tools</h5>
+                    <p>NumPy, Pandas, Apache Airflow, Tableau, Jira, Confluence, Microsoft Word, Microsoft Visio, Microsoft Excel</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Databases</h5>
+                    <p>MySQL, Postgres, MongoDB</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Web Development</h5>
+                    <p>HTML, CSS, Flask, Django</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Raiyan Islam. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/raiyanislam27/" target="_blank" class="text-white mx-2">LinkedIn</a>
+    <a href="https://github.com/rayyzz" target="_blank" class="text-white mx-2">GitHub</a>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
